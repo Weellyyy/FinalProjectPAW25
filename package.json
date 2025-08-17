@@ -19,15 +19,13 @@
   "homepage": "https://github.com/Weellyyy/FinalProjectPAW25#readme",
   "description": "",
   "dependencies": {
-<<<<<<< HEAD
     "cors": "^2.8.5",
-    "nodemon": "^3.1.10"
-=======
+    "nodemon": "^3.1.10",
     "dotenv": "^17.2.1",
     "ejs": "^3.1.10",
     "express": "^5.1.0",
     "mysql2": "^3.14.3",
     "sequelize": "^6.37.7"
->>>>>>> db4d4b2ef54b66c7eb04a8986e08680d1720f7b5
   }
 }
+
