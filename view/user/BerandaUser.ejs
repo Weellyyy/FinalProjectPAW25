@@ -1,12 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beranda User</title>
+    <title>Navbar with Centered Profile Icon</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1>Selamat datang di Beranda User</h1>
-    <p>Ini adalah halaman beranda untuk pengguna.</p>
+<body class="bg-gradient-to-tr from-cyan-400 via-blue-500 to-purple-600 min-h-screen">
+
+    <header class="sticky top-0 z-50 bg-white/25 backdrop-blur-lg border-b border-white/30 shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center text-white">
+
+            <div class="flex items-center gap-6">
+                <a href="#" class="text-2xl font-bold">WORKSHOP<span class="text-cyan-300">.com</span></a>
+                <div class="hidden md:block relative">
+                    <input type="text" placeholder="workshop yang relata sama kamu?" class="bg-white/20 placeholder-gray-200 text-sm rounded-lg py-2 pl-4 pr-10 w-80 focus:outline-none">
+                    <button class="absolute inset-y-0 right-0 px-3 text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="hidden md:flex items-center gap-6 text-sm">
+                <a href="#" class="hover:text-cyan-300">Jelajah Event</a>
+                <a href="#" class="hover:text-cyan-300">Tiket Saya</a>
+
+                <div class="dropdown dropdown-end">
+                    <button tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                        <div class="w-9 rounded-full flex items-center justify-center">
+                            <img src="https://i.imgur.com/8b2dJ2w.png" alt="Ikon Profil" class="w-full h-full object-contain" />
+                        </div>
+                    </button>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-gray-800">
+                        <li><a>Profile</a></li>
+                        <li><a>Settings</a></li>
+                        <li><a>Logout</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="md:hidden">
+                <button class="text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
+                </button>
+            </div>
+
+        </div>
+    </header>
+
 </body>
 </html>
